@@ -19,7 +19,9 @@ struct Game {
     let releaseYear: String
     let image: UIImage
     let description: String
-    let rating: Int
+    let overallRating: Float
+    let gameplayRating: Float
+    let musicRating: Float
     let imageScreenshot : [UIImage]
     let genre : [String]
 }
