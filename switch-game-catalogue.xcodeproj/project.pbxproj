@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A738F38124558EAC00894359 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738F38024558EAC00894359 /* ProfileViewController.swift */; };
 		A738F386245596A200894359 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738F385245596A200894359 /* User.swift */; };
-		A738F38B2456600900894359 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A738F38A2456600900894359 /* Default-568h@2x.png */; };
 		A77F4ADC245429C4005DCBD9 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F4ADA245429C4005DCBD9 /* GameListCell.swift */; };
 		A77F4ADD245429C4005DCBD9 /* GameListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A77F4ADB245429C4005DCBD9 /* GameListCell.xib */; };
 		A77F4AE024552416005DCBD9 /* ScreenshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F4ADE24552416005DCBD9 /* ScreenshotCollectionViewCell.swift */; };
@@ -48,7 +47,6 @@
 /* Begin PBXFileReference section */
 		A738F38024558EAC00894359 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A738F385245596A200894359 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A738F38A2456600900894359 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A77F4ADA245429C4005DCBD9 /* GameListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
 		A77F4ADB245429C4005DCBD9 /* GameListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameListCell.xib; sourceTree = "<group>"; };
 		A77F4ADE24552416005DCBD9 /* ScreenshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 			children = (
 				A77F4ADB245429C4005DCBD9 /* GameListCell.xib */,
 				A7A190172453922200FE89F3 /* Main.storyboard */,
-				A7A1901A2453922300FE89F3 /* Assets.xcassets */,
 				A7A1901C2453922300FE89F3 /* LaunchScreen.storyboard */,
 			);
 			path = ListGame;
@@ -154,10 +151,17 @@
 			path = SupportFile;
 			sourceTree = "<group>";
 		};
+		A738F38C2456672300894359 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1901A2453922300FE89F3 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		A7A190052453922200FE89F3 = {
 			isa = PBXGroup;
 			children = (
-				A738F38A2456600900894359 /* Default-568h@2x.png */,
 				A7A190102453922200FE89F3 /* switch-game-catalogue */,
 				A7A190272453922300FE89F3 /* switch-game-catalogueTests */,
 				A7A190322453922300FE89F3 /* switch-game-catalogueUITests */,
@@ -217,6 +221,7 @@
 		A7A1904224539B7D00FE89F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A738F38C2456672300894359 /* Assets */,
 				A738F37F24557C2600894359 /* DetailGame */,
 				A738F37E24557C1100894359 /* ListGame */,
 			);
@@ -342,7 +347,6 @@
 				A77F4AE124552416005DCBD9 /* ScreenshotCollectionViewCell.xib in Resources */,
 				A7A1901B2453922300FE89F3 /* Assets.xcassets in Resources */,
 				A77F4ADD245429C4005DCBD9 /* GameListCell.xib in Resources */,
-				A738F38B2456600900894359 /* Default-568h@2x.png in Resources */,
 				A7A190192453922200FE89F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
