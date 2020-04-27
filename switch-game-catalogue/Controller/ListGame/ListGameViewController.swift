@@ -21,7 +21,7 @@ class ListGameViewController: UIViewController {
         gameTableView.dataSource = self
         gameTableView.delegate = self
         
-        gameTableView.register(GameListCell.registerNib(), forCellReuseIdentifier: "ListGameCell")
+        gameTableView.register(GameListCell.registerGameListCell(), forCellReuseIdentifier: "ListGameCell")
     }
 
 

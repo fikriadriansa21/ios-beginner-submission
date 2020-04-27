@@ -18,7 +18,7 @@ class ScreenshotCollectionViewCell: UICollectionViewCell {
         imageScreenshot.clipsToBounds = true
     }
     
-    static func registerNib()->UINib{
+    static func registerScreenshotCell()->UINib{
         return UINib(nibName: "ScreenshotCollectionViewCell", bundle: nil)
     }
     

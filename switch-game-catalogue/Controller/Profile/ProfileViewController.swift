@@ -18,10 +18,6 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-//        imagePhotoUser.layer.cornerRadius = imagePhotoUser.frame.height / 4
-//        imagePhotoUser.clipsToBounds = true
-//
         for users in userData {
             labelName.text = users.name
             labelEmail.text = users.email

@@ -26,11 +26,10 @@ class DetailGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
-//        navbarDetail.prefersLargeTitles = true
         
         screenshotCollectionView.delegate = self
         screenshotCollectionView.dataSource = self
-        screenshotCollectionView.register(ScreenshotCollectionViewCell.registerNib(), forCellWithReuseIdentifier: "ImageScreenshotCell")
+        screenshotCollectionView.register(ScreenshotCollectionViewCell.registerScreenshotCell(), forCellWithReuseIdentifier: "ImageScreenshotCell")
 
         if let result = game {
             let stringOverallRating = String(format:"%.1f", result.overallRating)
@@ -56,14 +55,12 @@ extension DetailGameViewController {
     private func setupDetailImageView(image: UIImageView){
         image.layer.cornerRadius = 12
         image.clipsToBounds = true
-        image.layer.borderColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0).cgColor
         image.layer.masksToBounds = true
-        image.layer.borderWidth = 2
     }
 }
 
 
-extension DetailGameViewController : UICollectionViewDataSource{
+extension DetailGameViewController : UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         (game?.imageScreenshot.count)!
     }
@@ -76,9 +73,5 @@ extension DetailGameViewController : UICollectionViewDataSource{
         
         return cell
     }
-    
-}
-
-extension DetailGameViewController : UICollectionViewDelegate{
     
 }
